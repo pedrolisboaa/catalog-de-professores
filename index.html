@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTeacher</title>
+
+    <!--FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="static/css/style.css">
+    
+</head>
+
+<body>
+
+    <header class="header">
+        <img class="header-img" src="img/logo_myteacher.png" alt="logo my teacher">
+        <h1 class="header-h1" id="titulo">Encontre o professor perfeito!</h1>
+    </header>
+
+    <main>
+        <section class="professor-container">
+            <img class="professor-img" src="img/foto_professor_1.png" alt="foto profoessor">
+            <p><strong class="professor-nome">João da Silva</strong></p>
+            <p class="professor-price">R$ 100,00 por hora</p>
+            <p class="professor-descricao">Professor de inglês, ja morou nos Estados Unidos e Inglaterra.</p>
+            <form class="professor-formulario">
+                <input name="preco" type="hidden" value="100">
+                <input min="1" name="hora" class="professor-formulario__input" type="number" name="" id="" placeholder="Quantidade de horas" required>
+                <button class="professor-formulario__btn" type="submit">Calcular Valor Total</button>
+            </form>
+        </section>
+
+        <section class="professor-container">
+            <img class="professor-img" src="img/foto_professor_2.png" alt="foto profoessor">
+            <p><strong class="professor-nome">Maria da Silva</strong></p>
+            <p class="professor-price">R$ 110,00 por hora</p>
+            <p class="professor-descricao">Professor de inglês, ja morou nos Estados Unidos e Inglaterra.</p>
+            <form class="professor-formulario">
+                <input min="1" name="preco" type="hidden" type="text" value="110">
+                <input name="hora" class="professor-formulario__input" type="number" name="" id="" placeholder="Quantidade de horas" required>
+                <button class="professor-formulario__btn" type="submit">Calcular Valor Total</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="static/js/scrip.js"></script>
+</body>
+
+</html>
